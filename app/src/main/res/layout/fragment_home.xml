@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:padding="20dp"
+            app:cardCornerRadius="12dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/me"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+        </androidx.cardview.widget.CardView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:text="Chioma Igbokwe"
+            android:textSize="22dp"
+            android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:gravity="center"
+            android:text="FullStack Engineer"
+            android:textSize="18dp"
+            />
+        <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_career"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="4dp"
+        android:padding="20dp"
+        app:cardCornerRadius="12dp">
+
+
+        <LinearLayout
+            android:id="@+id/career_note"
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Career Note"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/career_desc"
+                android:layout_width="392dp"
+                android:layout_height="75dp"
+                android:text="Completed on-campus studies and currently taking distance education courses to complete a  Master’s Degree in Computer Science (Available for full-time, W-2 employment)"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="-6dp"
+                tools:layout_editor_absoluteY="52dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="5dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_work_experience"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            android:layout_marginBottom="4dp"
+            android:padding="20dp"
+            app:cardCornerRadius="12dp">
+
+
+            <LinearLayout
+                android:id="@+id/work_experience"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/work_experience_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Work Experience"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/work_experience_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="137dp"
+                    android:text="Languages: Java, , Python,  Web: HTML5, CSS3, Bootstrap, JavaScript, TypeScript, Express.js, jQuery Web Services: Django, REST Framework, AWS(EC2, CloudFront, S3) Web / APP Servers: NGINX, Apache, Tomcat Frameworks: Angular, Django, Node, Express, Spring, EclipseLink, Hibernate Databases: Postgres, MySQL, MongoDB, MS SQL Design"
+                    android:textSize="14sp"
+                    tools:layout_editor_absoluteX="-6dp"
+                    tools:layout_editor_absoluteY="52dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/fab"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom|end"-->
+<!--        android:layout_margin="16dp"-->
+<!--        android:contentDescription="@string/add_to_home"-->
+<!--        android:src="@drawable/add" />-->
+
+
+</FrameLayout>

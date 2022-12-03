@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_education"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:padding="20dp"
+        app:cardCornerRadius="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my_contacts"
+                android:textSize="20sp"
+                android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+                />
+            <LinearLayout
+                android:id="@+id/address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/address_logo_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.4"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/address_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/address"
+                        android:contentDescription="Address Logo"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/address_no_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2.6"
+                    android:padding="12dp">
+
+
+                    <TextView
+                        android:id="@+id/address_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1000 N 4th street"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/mobile_detail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/mobile_logo_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.4"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/mobile_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/phone"
+                        android:contentDescription="Phone Icon"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/mobile_no_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2.6"
+                    android:padding="12dp">
+
+
+                    <TextView
+                        android:id="@+id/school_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="+1(641)819-2445"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/degree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/email_detail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/email_logo_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.4"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/email_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/gmail"
+                        android:contentDescription="Mail icon"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/email_add_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2.6"
+                    android:padding="12dp">
+
+
+                    <TextView
+                        android:id="@+id/email_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="developer@gmail.com"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/email_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linkedIn_detail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/linkedIn_logo_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.4"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/linkedIn_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/linkedin"
+                        android:contentDescription="LinkedIn Logo"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linkedIn_info_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2.6"
+                    android:padding="12dp">
+
+
+                    <TextView
+                        android:id="@+id/linkedIn_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="https://www.linkedin.com/in/chioma"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/linkedIn_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="LinkedIn"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/github_detail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/github_logo_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.4"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/github_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/github"
+                        android:contentDescription="Github Logo"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/github_id_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2.6"
+                    android:padding="12dp">
+
+
+                    <TextView
+                        android:id="@+id/github_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="https://github.com/IAmChioma"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/github_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Github"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/facebook_detail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/facebook_logo_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.4"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/facebook_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/fb"
+                        android:contentDescription="Facebook Logo"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/facebook_no_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2.6"
+                    android:padding="12dp">
+
+
+                    <TextView
+                        android:id="@+id/facebook_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="www.facebook.com/chioma.peace.uche"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/facebook_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Facebook"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/twitter_detail"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/twitter_logo_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.4"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:id="@+id/twitter_logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/twitter"
+                        android:contentDescription="Twitter Logo"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/twitter_no_details"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2.6"
+                    android:padding="12dp">
+
+
+                    <TextView
+                        android:id="@+id/twitter_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="www.twitter.com/chiomzy_peace"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/twitter_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Twitter"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        />
+</FrameLayout>
