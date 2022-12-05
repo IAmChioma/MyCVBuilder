@@ -38,6 +38,10 @@ class DashboardActivity : AppCompatActivity() {
                     tab.text="Contact"
                     tab.setIcon(R.drawable.contact)
                 }
+                4->{
+                    tab.text="Project"
+                    tab.setIcon(R.drawable.project)
+                }
 
             }
         }.attach()

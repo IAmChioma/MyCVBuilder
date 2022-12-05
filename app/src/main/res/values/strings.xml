@@ -30,7 +30,7 @@
     <string name="enter_username">Enter Username</string>
     <string name="e_g_testuser">e.g testUser</string>
     <string name="password_hint">********</string>
-    <string name="phone_hint">(641)–810-2345</string>
+    <string name="phone_hint">(641) 810 2345</string>
     <string name="email_hint">abc@example.com</string>
     <string name="enter_mobile_no">Enter Mobile No.</string>
     <string name="enter_email">Enter Email</string>
@@ -52,4 +52,8 @@
     <string name="role">Role</string>
     <string name="company">Company</string>
     <string name="login">Login</string>
+    <string name="add_to_project">Add To Project</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="choose_image">Choose Image</string>
 </resources>

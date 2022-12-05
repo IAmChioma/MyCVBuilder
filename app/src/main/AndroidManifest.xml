@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,10 +13,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCVBuilder"
         tools:targetApi="31">
+
+        <activity
+            android:name=".AddProjectActivity"
+            android:exported="false"
+            android:label="Add New Project"
+            android:theme="@android:style/Theme.Holo.Light.Dialog">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
         <activity
             android:name=".AddWorkExperienceActivity"
-            android:label="Add New Experience"
             android:exported="false"
+            android:label="Add New Experience"
             android:theme="@android:style/Theme.Holo.Light.Dialog">
             <meta-data
                 android:name="android.app.lib_name"

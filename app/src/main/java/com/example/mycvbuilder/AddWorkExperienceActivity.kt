@@ -6,7 +6,9 @@ import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_add_work_experience.*
 
+
 class AddWorkExperienceActivity : Activity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_work_experience)
@@ -16,6 +18,7 @@ class AddWorkExperienceActivity : Activity() {
         finish()
     }
     fun submit(view: View){
+
         val role = job_role.text.toString().trim()
         val comp = company.text.toString().trim()
         val duration = job_duration.text.toString().trim()
@@ -43,4 +46,5 @@ class AddWorkExperienceActivity : Activity() {
 
 
     }
+
 }

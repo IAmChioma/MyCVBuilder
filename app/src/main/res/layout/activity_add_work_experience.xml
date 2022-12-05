@@ -26,6 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/company"
             android:inputType="text"
             android:minHeight="48dp" />
 
@@ -41,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/role"
             android:inputType="text"
             android:minHeight="48dp" />
         <TextView
@@ -55,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/duration"
             android:inputType="text"
             android:minHeight="48dp" />
         <TextView
@@ -69,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/location"
             android:inputType="text"
             android:minHeight="48dp" />
 
